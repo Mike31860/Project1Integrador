@@ -1,0 +1,10 @@
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\bin\Debug\Proyect1.exe.config
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\bin\Debug\Proyect1.exe
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\bin\Debug\Proyect1.pdb
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\obj\Debug\Proyect1.csprojResolveAssemblyReference.cache
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\obj\Debug\Proyect1.Form1.resources
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\obj\Debug\Proyect1.Properties.Resources.resources
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\obj\Debug\Proyect1.csproj.GenerateResource.Cache
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\obj\Debug\Proyect1.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\obj\Debug\Proyect1.exe
+C:\Users\Miguel\Desktop\Project1\Proyect1\Proyect1\obj\Debug\Proyect1.pdb
