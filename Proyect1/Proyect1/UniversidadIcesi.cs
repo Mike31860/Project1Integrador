@@ -56,7 +56,7 @@ namespace Proyect1
         {
             
 
-            StreamWriter escribir = new StreamWriter(nombre + ".txt");
+            StreamWriter escribir = new StreamWriter(nombre);
 
 
             escribir.Write("Nombre  Code  Edad  Country");
@@ -68,6 +68,7 @@ namespace Proyect1
                 escribir.WriteLine();
 
             }
+            escribir.Close();
 
         }
 
@@ -75,12 +76,12 @@ namespace Proyect1
         {
             
             StreamReader leer = new StreamReader(text);
- 
-            
+            leer.ReadLine();
+            String mensaje = leer.ReadLine();
 
-            while (leer.ReadLine()!=null)
+            while (mensaje!=null)
             {
-                String[] informacion = leer.ReadLine().Split(' ');
+                String[] informacion = mensaje.Split(' ');
                 String name = informacion[0];
                 String code = informacion[1];
                 int edad = int.Parse(informacion[2]);
@@ -91,6 +92,7 @@ namespace Proyect1
                 Estudiante nuevo = new Estudiante(name, code, edad, carrera, semestre);
                 
                 Estudiantes.Add(nuevo);
+                mensaje = leer.ReadLine();
 
             }
 

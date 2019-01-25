@@ -90,12 +90,14 @@ namespace Proyect1
             savefile.InitialDirectory = ".//Proyect1//Proyect1//Archivos";
             if (savefile.ShowDialog() == DialogResult.OK)
             {
-                String nombre = savefile.FileName;
+                String nombre = savefile.FileName+".txt";
                 icesi2.guardarArchivo1(nombre);
               
 
 
             }
+
+
         }
 
         private void AbrirBoton_Click(object sender, EventArgs e)
