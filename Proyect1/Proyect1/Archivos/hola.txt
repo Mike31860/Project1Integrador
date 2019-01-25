@@ -1,4 +1,2 @@
-Nombre  Code  Edad  Country 
- 
-
-Miguel 14 40 Ingenierìa Industrial 6
+﻿Nombre  Code  Edad  Country
+Miguel 14 40 IngenierìaIndustrial 6

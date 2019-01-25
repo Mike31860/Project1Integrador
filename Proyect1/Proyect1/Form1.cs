@@ -91,31 +91,28 @@ namespace Proyect1
             if (savefile.ShowDialog() == DialogResult.OK)
             {
                 String nombre = savefile.FileName;
-
-                StreamWriter escribir = new StreamWriter(nombre + ".txt");
-                
-
-                    escribir.Write("Nombre  Code  Edad  Country \n ");
-                    escribir.WriteLine();
-                    for (int i = 0; i < icesi2.Estudiantes.LongCount(); i++)
-                    {
-                        escribir.Write("\n" + icesi2.Estudiantes[i].Name + " " + icesi2.Estudiantes[i].Code + " " +
-                            icesi2.Estudiantes[i].Edad+" "+ icesi2.Estudiantes[i].Carrera1+" "+icesi2.Estudiantes[i].semestre);
-                        escribir.WriteLine();
-
-                    }
+                icesi2.guardarArchivo1(nombre);
+              
 
 
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AbrirBoton_Click(object sender, EventArgs e)
         {
+            openFileDialog1.InitialDirectory = ".//Proyect1//Proyect1//Archivos";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                String nombre = openFileDialog1.FileName;
+                List<Estudiante> listaRetornada=icesi2.abrirArchivo(nombre);
+                for (int i=0; i<icesi2.Estudiantes.Count;i++)
+                {
+                    lista.Items.Add(icesi2.Estudiantes[i].ToString());
+                }
 
-        }
 
-        private void Abrir(object sender, EventArgs e)
-        {
+
+            }
 
         }
     }

@@ -45,7 +45,8 @@
             this.savefile = new System.Windows.Forms.SaveFileDialog();
             this.comboBoxSemestre = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AbrirBoton = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label2
@@ -122,12 +123,14 @@
             // 
             // comboBoxCarrera
             // 
+            this.comboBoxCarrera.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCarrera.FormattingEnabled = true;
             this.comboBoxCarrera.Items.AddRange(new object[] {
-            "Ingenieria de Sistemas",
+            "IngenieriaSistemas",
             "Medicina",
-            "Ingenieria Telemática",
-            "Ingenierìa Industrial"});
+            "IngenieriaTelemática",
+            "IngenierìaIndustrial"});
             this.comboBoxCarrera.Location = new System.Drawing.Point(150, 125);
             this.comboBoxCarrera.Name = "comboBoxCarrera";
             this.comboBoxCarrera.Size = new System.Drawing.Size(121, 21);
@@ -139,7 +142,7 @@
             this.Guardar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardar.Location = new System.Drawing.Point(93, 244);
+            this.Guardar.Location = new System.Drawing.Point(75, 244);
             this.Guardar.Name = "Guardar";
             this.Guardar.Size = new System.Drawing.Size(80, 40);
             this.Guardar.TabIndex = 12;
@@ -224,25 +227,29 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Nombre  Código   Edad  Carrera  Semestre";
             // 
-            // button1
+            // AbrirBoton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(201, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 40);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Abrir";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.AbrirBoton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AbrirBoton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AbrirBoton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbrirBoton.Location = new System.Drawing.Point(191, 244);
+            this.AbrirBoton.Name = "AbrirBoton";
+            this.AbrirBoton.Size = new System.Drawing.Size(120, 40);
+            this.AbrirBoton.TabIndex = 20;
+            this.AbrirBoton.Text = "Abrir Archivo";
+            this.AbrirBoton.UseVisualStyleBackColor = false;
+            this.AbrirBoton.Click += new System.EventHandler(this.AbrirBoton_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 380);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AbrirBoton);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBoxSemestre);
             this.Controls.Add(this.guardarArchivo);
@@ -284,7 +291,8 @@
         private System.Windows.Forms.SaveFileDialog savefile;
         private System.Windows.Forms.ComboBox comboBoxSemestre;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AbrirBoton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
