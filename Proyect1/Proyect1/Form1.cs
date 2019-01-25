@@ -109,7 +109,7 @@ namespace Proyect1
                 List<Estudiante> listaRetornada=icesi2.abrirArchivo(nombre);
                 for (int i=0; i<icesi2.Estudiantes.Count;i++)
                 {
-                    lista.Items.Add(icesi2.Estudiantes[i].ToString());
+                    lista.Items.Add(icesi2.Estudiantes[i]);
                 }
 
 
