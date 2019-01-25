@@ -1,0 +1,12 @@
+Nombre  Code  Edad  Country 
+ 
+
+Miguel 10 25Ingenieria Telemática 5
+
+a 10 25Ingenieria Telemática 5
+
+c 10 25Ingenieria Telemática 5
+
+e 10 25Ingenieria Telemática 5
+
+g 10 25Ingenieria Telemática 5

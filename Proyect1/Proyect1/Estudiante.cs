@@ -38,6 +38,7 @@ namespace Proyect1
         public string Code { get => code; set => code = value; }
         public int Edad { get => edad; set => edad = value; }
         public string Carrera1 { get => Carrera; set => Carrera = value; }
+        public int semestre { get => Semestre; set => Semestre = value; }
 
 
         override

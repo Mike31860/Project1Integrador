@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,6 +75,9 @@ namespace Proyect1
             textName.Text = encontrado.Name;
             textEdad.Text = encontrado.Edad+"";
             comboBoxCarrera.Text = encontrado.Carrera1;
+            comboBoxSemestre.Text =  encontrado.semestre+"";
+            textCodigo.Text = encontrado.Code;
+
           
 
             
@@ -81,11 +85,38 @@ namespace Proyect1
           
         }
 
+        private void guardarArchivo_Click(object sender, EventArgs e)
+        {
+            savefile.InitialDirectory = ".//Proyect1//Proyect1//Archivos";
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                String nombre = savefile.FileName;
+
+                StreamWriter escribir = new StreamWriter(nombre + ".txt");
+                
+
+                    escribir.Write("Nombre  Code  Edad  Country \n ");
+                    escribir.WriteLine();
+                    for (int i = 0; i < icesi2.Estudiantes.LongCount(); i++)
+                    {
+                        escribir.Write("\n" + icesi2.Estudiantes[i].Name + " " + icesi2.Estudiantes[i].Code + " " +
+                            icesi2.Estudiantes[i].Edad+" "+ icesi2.Estudiantes[i].Carrera1+" "+icesi2.Estudiantes[i].semestre);
+                        escribir.WriteLine();
+
+                    }
 
 
+            }
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void Abrir(object sender, EventArgs e)
+        {
 
+        }
     }
 }

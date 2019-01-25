@@ -38,14 +38,14 @@
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.comboBoxCarrera = new System.Windows.Forms.ComboBox();
             this.Guardar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lista = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.guardarArchivo = new System.Windows.Forms.Button();
-            this.saveFile = new System.Windows.Forms.SaveFileDialog();
+            this.savefile = new System.Windows.Forms.SaveFileDialog();
             this.comboBoxSemestre = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -103,21 +103,21 @@
             // 
             this.textName.Location = new System.Drawing.Point(150, 72);
             this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(100, 20);
+            this.textName.Size = new System.Drawing.Size(121, 20);
             this.textName.TabIndex = 6;
             // 
             // textEdad
             // 
             this.textEdad.Location = new System.Drawing.Point(150, 99);
             this.textEdad.Name = "textEdad";
-            this.textEdad.Size = new System.Drawing.Size(100, 20);
+            this.textEdad.Size = new System.Drawing.Size(121, 20);
             this.textEdad.TabIndex = 7;
             // 
             // textCodigo
             // 
             this.textCodigo.Location = new System.Drawing.Point(150, 156);
             this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(100, 20);
+            this.textCodigo.Size = new System.Drawing.Size(121, 20);
             this.textCodigo.TabIndex = 9;
             // 
             // comboBoxCarrera
@@ -146,18 +146,6 @@
             this.Guardar.Text = "Guardar";
             this.Guardar.UseVisualStyleBackColor = false;
             this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(191, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 40);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Abrir";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -200,6 +188,7 @@
             this.guardarArchivo.TabIndex = 17;
             this.guardarArchivo.Text = "Guardar Archivo";
             this.guardarArchivo.UseVisualStyleBackColor = false;
+            this.guardarArchivo.Click += new System.EventHandler(this.guardarArchivo_Click);
             // 
             // comboBoxSemestre
             // 
@@ -235,18 +224,31 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Nombre  Código   Edad  Carrera  Semestre";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(201, 244);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 40);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Abrir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 380);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBoxSemestre);
             this.Controls.Add(this.guardarArchivo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lista);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Guardar);
             this.Controls.Add(this.comboBoxCarrera);
             this.Controls.Add(this.textCodigo);
@@ -275,14 +277,14 @@
         private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.ComboBox comboBoxCarrera;
         private System.Windows.Forms.Button Guardar;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button guardarArchivo;
-        private System.Windows.Forms.SaveFileDialog saveFile;
+        private System.Windows.Forms.SaveFileDialog savefile;
         private System.Windows.Forms.ComboBox comboBoxSemestre;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }
 
