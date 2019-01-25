@@ -21,6 +21,10 @@ namespace Proyect1
         public Form1()
         {
             icesi2 = new UniversidadIcesi();
+
+            Bitmap imagen = new Bitmap(Application.StartupPath + @"\Imagenes\uno.jpeg");
+                
+            this.BackgroundImage = imagen;
           
             InitializeComponent();
         }
@@ -107,6 +111,12 @@ namespace Proyect1
             {
                 String nombre = openFileDialog1.FileName;
                 List<Estudiante> listaRetornada=icesi2.abrirArchivo(nombre);
+
+                lista.Items.Clear();
+                    
+
+                    
+
                 for (int i=0; i<icesi2.Estudiantes.Count;i++)
                 {
                     lista.Items.Add(icesi2.Estudiantes[i]);

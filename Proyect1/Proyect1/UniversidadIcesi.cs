@@ -79,6 +79,7 @@ namespace Proyect1
             leer.ReadLine();
             String mensaje = leer.ReadLine();
 
+
             while (mensaje!=null)
             {
                 String[] informacion = mensaje.Split(' ');
