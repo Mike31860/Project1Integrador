@@ -66,8 +66,12 @@ namespace Proyect1
             Persona estudiante = new Persona(nombre, edad, ocupacion, motivo, ingreso);
             icesi2.guardarEstudiante(nombre, edad, ocupacion, motivo, ingreso);
             lista.Items.Add(estudiante);
+            dataGridView1.Rows.Add(nombre, edad, ocupacion, motivo, ingreso);
+            
 
-         
+
+
+
 
 
 
@@ -125,17 +129,9 @@ namespace Proyect1
 
                 for (int i=0; i< icesi2.Personas.Count; i++)
                 {
-                    
-                    
+             
                        dataGridView1.Rows.Add(icesi2.Personas[i].Name, icesi2.Personas[i].Edad, icesi2.Personas[i].ocupacion,
                            icesi2.Personas[i].motivo2, icesi2.Personas[i].fecha);
-
-
-                    
-
-
-
-
                 }
 
 
@@ -145,6 +141,16 @@ namespace Proyect1
 
         private void label8_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+           
+          
+            
+
 
         }
     }
