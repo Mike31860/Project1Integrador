@@ -25,13 +25,17 @@ namespace Proyect1
 
         private int Semestre;
 
-        public Estudiante(string name,  string code, int edad, string carrera, int semestre)
+        private DateTime entrada;
+
+        public Estudiante(string name,  string code, int edad, string carrera, int semestre, DateTime fecha)
         {
             this.name = name;
             this.code = code;
             this.edad = edad;
             this.Carrera = carrera;
             this.Semestre = semestre;
+            this.entrada = fecha;
+
         }
 
         public string Name { get => name; set => name = value; }
@@ -39,6 +43,7 @@ namespace Proyect1
         public int Edad { get => edad; set => edad = value; }
         public string Carrera1 { get => Carrera; set => Carrera = value; }
         public int semestre { get => Semestre; set => Semestre = value; }
+        public DateTime fecha { get => entrada; set => entrada = value; }
 
 
         override
