@@ -1,7 +1,0 @@
-Nombre  Code  Edad  Country
-Miguel 10 15 IngenieriaTelemática 6
-Socio 0121 47 Medicina 6
-YESYESYES 111 78 IngenierìaIndustrial 9
-Alejandra 17 10 Medicina 5
-Angie 11 12 IngenieriaTelemática 8
-Cobo 10 11 IngenierìaIndustrial 10

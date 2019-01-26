@@ -13,12 +13,12 @@ namespace Proyect1
     {
 
 
-        private List<Estudiante> estudiantes;
+        private List<Persona> personas;
 
 
         public UniversidadIcesi()
         {
-            estudiantes = new List<Estudiante>();
+            personas = new List<Persona>();
 
 
         }
@@ -32,17 +32,17 @@ namespace Proyect1
 
         }
 
-        internal List<Estudiante> Estudiantes { get => estudiantes; set => estudiantes = value; }
+        internal List<Persona> Personas { get => personas; set => personas = value; }
 
 
-        public void guardarEstudiante(string name, string codigo, int edad, string Carrera, int semestre)
+        public void guardarEstudiante(string name, int edad, string ocupacion , string motivo, string fecha)
 
         {
-            Estudiante nuevo = new Estudiante(name, codigo, edad, Carrera, semestre);
-            Boolean esta = estudiantes.Contains(nuevo);
+            Persona nuevo = new Persona(name, edad, ocupacion, motivo, fecha);
+            Boolean esta = personas.Contains(nuevo);
             if (!esta)
             {
-                estudiantes.Add(nuevo);
+                personas.Add(nuevo);
 
             }
 
@@ -61,10 +61,10 @@ namespace Proyect1
 
             escribir.Write("Nombre  Code  Edad  Country");
             escribir.WriteLine();
-            for (int i = 0; i < Estudiantes.LongCount(); i++)
+            for (int i = 0; i < personas.LongCount(); i++)
             {
-                escribir.Write(Estudiantes[i].Name + " " + Estudiantes[i].Code + " " +
-                Estudiantes[i].Edad + " " + Estudiantes[i].Carrera1 + " " + Estudiantes[i].semestre);
+                escribir.Write(personas[i].Name + "-" +  personas[i].Edad + "-" +
+                    personas[i].ocupacion + "-" + personas[i].motivo2+"-"+personas[i].fecha);
                 escribir.WriteLine();
 
             }
@@ -72,7 +72,7 @@ namespace Proyect1
 
         }
 
-        public List<Estudiante> abrirArchivo(String text)
+        public List<Persona> abrirArchivo(String text)
         {
             
             StreamReader leer = new StreamReader(text);
@@ -82,22 +82,22 @@ namespace Proyect1
 
             while (mensaje!=null)
             {
-                String[] informacion = mensaje.Split(' ');
+                String[] informacion = mensaje.Split('-');
                 String name = informacion[0];
-                String code = informacion[1];
-                int edad = int.Parse(informacion[2]);
-                String carrera = informacion[3];
-                int semestre = int.Parse(informacion[4]);
+                int edad = int.Parse(informacion[1]);
+                String ocupacion = informacion[2];
+                string motivo = informacion[3];
+                string fecha = informacion[4];
 
 
-                Estudiante nuevo = new Estudiante(name, code, edad, carrera, semestre);
+                Persona nuevo = new Persona(name, edad, ocupacion, motivo, fecha);
                 
-                Estudiantes.Add(nuevo);
+                personas.Add(nuevo);
                 mensaje = leer.ReadLine();
 
             }
 
-            return Estudiantes;
+            return personas;
 
         }
 

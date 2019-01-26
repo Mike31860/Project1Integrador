@@ -57,13 +57,14 @@ namespace Proyect1
         private void Guardar_Click(object sender, EventArgs e)
         {
             String nombre = textName.Text;
-            String code = textCodigo.Text;
             int edad = Int32.Parse(textEdad.Text);
-            String carrera = comboBoxCarrera.Text;
-            int semestre = Int32.Parse(comboBoxSemestre.Text);
+            String ocupacion = textOcupacion.Text;
+            string motivo = motivoVisitatext.Text;
+            string ingreso = dateTimePicker1.Text;
+
             
-            Estudiante estudiante = new Estudiante(nombre, code, edad, carrera, semestre);
-            icesi2.guardarEstudiante(nombre, code, edad, carrera, semestre);
+            Persona estudiante = new Persona(nombre, edad, ocupacion, motivo, ingreso);
+            icesi2.guardarEstudiante(nombre, edad, ocupacion, motivo, ingreso);
             lista.Items.Add(estudiante);
 
          
@@ -75,12 +76,12 @@ namespace Proyect1
         private void lista_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListBox index = (ListBox) sender;
-            Estudiante encontrado = (Estudiante ) index.SelectedItem;
+            Persona encontrado = (Persona ) index.SelectedItem;
             textName.Text = encontrado.Name;
             textEdad.Text = encontrado.Edad+"";
-            comboBoxCarrera.Text = encontrado.Carrera1;
-            comboBoxSemestre.Text =  encontrado.semestre+"";
-            textCodigo.Text = encontrado.Code;
+            textOcupacion.Text = encontrado.ocupacion;
+            motivoVisitatext.Text =  encontrado.motivo2;
+            dateTimePicker1.Text = encontrado.fecha;
 
           
 
@@ -110,16 +111,16 @@ namespace Proyect1
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 String nombre = openFileDialog1.FileName;
-                List<Estudiante> listaRetornada=icesi2.abrirArchivo(nombre);
+                List<Persona> listaRetornada=icesi2.abrirArchivo(nombre);
 
                 lista.Items.Clear();
                     
 
                     
 
-                for (int i=0; i<icesi2.Estudiantes.Count;i++)
+                for (int i=0; i<icesi2.Personas.Count;i++)
                 {
-                    lista.Items.Add(icesi2.Estudiantes[i]);
+                    lista.Items.Add(icesi2.Personas[i]);
                 }
 
 

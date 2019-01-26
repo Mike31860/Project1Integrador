@@ -35,20 +35,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textName = new System.Windows.Forms.TextBox();
             this.textEdad = new System.Windows.Forms.TextBox();
-            this.textCodigo = new System.Windows.Forms.TextBox();
-            this.comboBoxCarrera = new System.Windows.Forms.ComboBox();
             this.Guardar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lista = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.guardarArchivo = new System.Windows.Forms.Button();
             this.savefile = new System.Windows.Forms.SaveFileDialog();
-            this.comboBoxSemestre = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.AbrirBoton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textOcupacion = new System.Windows.Forms.TextBox();
+            this.motivoVisitatext = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label2
@@ -82,11 +82,11 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(53, 125);
+            this.label4.Location = new System.Drawing.Point(29, 125);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 18);
+            this.label4.Size = new System.Drawing.Size(94, 18);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Carrera:";
+            this.label4.Text = "Ocupación:";
             // 
             // label5
             // 
@@ -94,11 +94,11 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(56, 155);
+            this.label5.Location = new System.Drawing.Point(12, 155);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 18);
+            this.label5.Size = new System.Drawing.Size(110, 18);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Còdigo:";
+            this.label5.Text = "Motivo Visita:";
             // 
             // label6
             // 
@@ -108,9 +108,8 @@
             this.label6.ForeColor = System.Drawing.SystemColors.Window;
             this.label6.Location = new System.Drawing.Point(38, 182);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 18);
+            this.label6.Size = new System.Drawing.Size(0, 18);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Semestre:";
             // 
             // textName
             // 
@@ -126,37 +125,14 @@
             this.textEdad.Size = new System.Drawing.Size(121, 20);
             this.textEdad.TabIndex = 7;
             // 
-            // textCodigo
-            // 
-            this.textCodigo.Location = new System.Drawing.Point(150, 156);
-            this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(121, 20);
-            this.textCodigo.TabIndex = 9;
-            // 
-            // comboBoxCarrera
-            // 
-            this.comboBoxCarrera.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxCarrera.FormattingEnabled = true;
-            this.comboBoxCarrera.Items.AddRange(new object[] {
-            "IngenieriaSistemas",
-            "Medicina",
-            "IngenieriaTelemática",
-            "IngenierìaIndustrial"});
-            this.comboBoxCarrera.Location = new System.Drawing.Point(150, 125);
-            this.comboBoxCarrera.Name = "comboBoxCarrera";
-            this.comboBoxCarrera.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCarrera.TabIndex = 11;
-            this.comboBoxCarrera.SelectedIndexChanged += new System.EventHandler(this.comboBoxCarrera_SelectedIndexChanged);
-            // 
             // Guardar
             // 
             this.Guardar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardar.Location = new System.Drawing.Point(75, 244);
+            this.Guardar.Location = new System.Drawing.Point(41, 282);
             this.Guardar.Name = "Guardar";
-            this.Guardar.Size = new System.Drawing.Size(80, 40);
+            this.Guardar.Size = new System.Drawing.Size(113, 40);
             this.Guardar.TabIndex = 12;
             this.Guardar.Text = "Guardar";
             this.Guardar.UseVisualStyleBackColor = false;
@@ -201,38 +177,13 @@
             this.guardarArchivo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.guardarArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.guardarArchivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guardarArchivo.Location = new System.Drawing.Point(109, 300);
+            this.guardarArchivo.Location = new System.Drawing.Point(102, 328);
             this.guardarArchivo.Name = "guardarArchivo";
             this.guardarArchivo.Size = new System.Drawing.Size(151, 40);
             this.guardarArchivo.TabIndex = 17;
             this.guardarArchivo.Text = "Guardar Archivo";
             this.guardarArchivo.UseVisualStyleBackColor = false;
             this.guardarArchivo.Click += new System.EventHandler(this.guardarArchivo_Click);
-            // 
-            // comboBoxSemestre
-            // 
-            this.comboBoxSemestre.AutoCompleteCustomSource.AddRange(new string[] {
-            "1",
-            "2",
-            "3"});
-            this.comboBoxSemestre.FormattingEnabled = true;
-            this.comboBoxSemestre.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.comboBoxSemestre.Location = new System.Drawing.Point(150, 179);
-            this.comboBoxSemestre.Name = "comboBoxSemestre";
-            this.comboBoxSemestre.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxSemestre.TabIndex = 18;
             // 
             // label8
             // 
@@ -250,7 +201,7 @@
             this.AbrirBoton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AbrirBoton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AbrirBoton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbrirBoton.Location = new System.Drawing.Point(191, 244);
+            this.AbrirBoton.Location = new System.Drawing.Point(193, 282);
             this.AbrirBoton.Name = "AbrirBoton";
             this.AbrirBoton.Size = new System.Drawing.Size(120, 40);
             this.AbrirBoton.TabIndex = 20;
@@ -264,7 +215,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(150, 206);
+            this.dateTimePicker1.Location = new System.Drawing.Point(150, 234);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker1.TabIndex = 21;
@@ -272,29 +223,55 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(75, 212);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label9.Location = new System.Drawing.Point(18, 234);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.Size = new System.Drawing.Size(111, 18);
             this.label9.TabIndex = 22;
-            this.label9.Text = "label9";
+            this.label9.Text = "Hora Ingreso:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(154, 125);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.TabIndex = 23;
+            // 
+            // textOcupacion
+            // 
+            this.textOcupacion.Location = new System.Drawing.Point(150, 126);
+            this.textOcupacion.Name = "textOcupacion";
+            this.textOcupacion.Size = new System.Drawing.Size(121, 20);
+            this.textOcupacion.TabIndex = 24;
+            // 
+            // motivoVisitatext
+            // 
+            this.motivoVisitatext.Location = new System.Drawing.Point(150, 156);
+            this.motivoVisitatext.Name = "motivoVisitatext";
+            this.motivoVisitatext.Size = new System.Drawing.Size(121, 56);
+            this.motivoVisitatext.TabIndex = 25;
+            this.motivoVisitatext.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(691, 380);
+            this.Controls.Add(this.motivoVisitatext);
+            this.Controls.Add(this.textOcupacion);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.AbrirBoton);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBoxSemestre);
             this.Controls.Add(this.guardarArchivo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lista);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Guardar);
-            this.Controls.Add(this.comboBoxCarrera);
-            this.Controls.Add(this.textCodigo);
             this.Controls.Add(this.textEdad);
             this.Controls.Add(this.textName);
             this.Controls.Add(this.label6);
@@ -317,20 +294,20 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textName;
         private System.Windows.Forms.TextBox textEdad;
-        private System.Windows.Forms.TextBox textCodigo;
-        private System.Windows.Forms.ComboBox comboBoxCarrera;
         private System.Windows.Forms.Button Guardar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button guardarArchivo;
         private System.Windows.Forms.SaveFileDialog savefile;
-        private System.Windows.Forms.ComboBox comboBoxSemestre;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button AbrirBoton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textOcupacion;
+        private System.Windows.Forms.RichTextBox motivoVisitatext;
     }
 }
 

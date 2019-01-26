@@ -6,50 +6,47 @@ using System.Threading.Tasks;
 
 namespace Proyect1
 {
-    class Estudiante
+    class Persona
     {
-        public static String INGENIERIASISTEMAS = "Ingenieria de sistemas";
-        public static String INGENIERIATELEMATICA = "Ingenieria Telemática";
-        public static String MEDICINA = "Medicina";
-        public static String INGENIERIAINDUSTRIAL = "Ingenieria Industrial";
+     
      
 
 
         private string name;
 
-        private string code;
+ 
 
         private int edad;
 
-        private string Carrera;
+        private string Ocupacion;
 
-        private int Semestre;
+        private String motivo;
 
-        private DateTime entrada;
+        private string entrada;
 
-        public Estudiante(string name,  string code, int edad, string carrera, int semestre, DateTime fecha)
+        public Persona(string name, int edad, string ocupacion, String motivo2, string fecha)
         {
             this.name = name;
-            this.code = code;
+          
             this.edad = edad;
-            this.Carrera = carrera;
-            this.Semestre = semestre;
+            this.Ocupacion = ocupacion;
+            this.motivo = motivo2;
             this.entrada = fecha;
 
         }
 
         public string Name { get => name; set => name = value; }
-        public string Code { get => code; set => code = value; }
+    
         public int Edad { get => edad; set => edad = value; }
-        public string Carrera1 { get => Carrera; set => Carrera = value; }
-        public int semestre { get => Semestre; set => Semestre = value; }
-        public DateTime fecha { get => entrada; set => entrada = value; }
+        public string ocupacion { get =>    Ocupacion; set => Ocupacion = value; }
+        public string motivo2 { get => motivo; set => motivo = value; }
+        public string fecha { get => entrada; set => entrada = value; }
 
 
         override
         public String ToString()
         {
-            return this.name + " " + this.code + "  " + this.edad + "  " + this.Carrera + "  " + this.Semestre;
+            return this.name + " " + "  " + this.edad + "  " + this.ocupacion + "  " + this.motivo+" "+this.entrada;
         }
 
     }
