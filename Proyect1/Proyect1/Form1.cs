@@ -123,9 +123,28 @@ namespace Proyect1
                     lista.Items.Add(icesi2.Personas[i]);
                 }
 
+                for (int i=0; i< icesi2.Personas.Count; i++)
+                {
+                    
+                    
+                       dataGridView1.Rows.Add(icesi2.Personas[i].Name, icesi2.Personas[i].Edad, icesi2.Personas[i].ocupacion,
+                           icesi2.Personas[i].motivo2, icesi2.Personas[i].fecha);
+
+
+                    
+
+
+
+
+                }
 
 
             }
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
 
         }
     }
