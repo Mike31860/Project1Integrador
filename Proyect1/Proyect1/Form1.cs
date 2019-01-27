@@ -118,9 +118,10 @@ namespace Proyect1
                 List<Persona> listaRetornada=icesi2.abrirArchivo(nombre);
 
                 lista.Items.Clear();
-                    
 
-                    
+
+                dataGridView1.Rows.Clear();
+                dataGridView1.Refresh();
 
                 for (int i=0; i<icesi2.Personas.Count;i++)
                 {

@@ -78,6 +78,7 @@ namespace Proyect1
             StreamReader leer = new StreamReader(text);
             leer.ReadLine();
             String mensaje = leer.ReadLine();
+            personas = new List<Persona>();
 
 
             while (mensaje!=null)
