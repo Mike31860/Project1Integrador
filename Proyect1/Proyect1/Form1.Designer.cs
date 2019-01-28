@@ -202,11 +202,11 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Info;
-            this.label8.Location = new System.Drawing.Point(356, 69);
+            this.label8.Location = new System.Drawing.Point(393, 69);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(392, 18);
             this.label8.TabIndex = 19;
-            this.label8.Text = "Nombre   Edad    Ocupación  Motivo  FechaIngreso";
+            this.label8.Text = "Nombre    Edad     Ocupación    Motivo    FechaIngreso";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // AbrirBoton
@@ -294,7 +294,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(359, 90);
+            this.dataGridView1.Location = new System.Drawing.Point(375, 90);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

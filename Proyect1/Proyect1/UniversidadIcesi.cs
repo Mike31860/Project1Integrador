@@ -59,7 +59,7 @@ namespace Proyect1
             StreamWriter escribir = new StreamWriter(nombre);
 
 
-            escribir.Write("Nombre  Code  Edad  Country");
+            escribir.Write("Nombre   Edad   Ocupación  Motivo   FechaIngreso");
             escribir.WriteLine();
             for (int i = 0; i < personas.LongCount(); i++)
             {

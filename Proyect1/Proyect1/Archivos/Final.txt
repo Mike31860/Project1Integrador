@@ -1,6 +1,0 @@
-Nombre  Code  Edad  Country
-Miguel-15-profesional-eses-Wednesday, November 14, 2018
-Miguel-15-profesional-eses-Saturday, December 1, 2018
-socio-15-profesional-eses-Saturday, December 1, 2018
-Andres-15-profesional-eses-Saturday, December 1, 2018
-Modelado-18-Estudiante-Pagar -Saturday, December 1, 2018
