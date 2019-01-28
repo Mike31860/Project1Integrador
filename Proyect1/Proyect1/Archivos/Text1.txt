@@ -1,0 +1,6 @@
+Nombre   Edad   Ocupación  Motivo   FechaIngreso
+Miguel-15-Profesor-Pagar Semestre-Monday, January 28, 2019
+Alejandra-15-Ingeniera-Pagar Semestre-Monday, January 28, 2019
+Angie-25-Medica-Pagar Semestre-Wednesday, January 9, 2019
+Melqui-25-Profesor-Visitar mi Hija-Thursday, January 10, 2019
+Sebastian-25-Profesor-Saludar-Thursday, January 10, 2019

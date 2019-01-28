@@ -1,6 +1,0 @@
-Nombre  Code  Edad  Country
-Miguel 45 Profesional Pagar Saturday, January 26, 2019
-Andres 45 Profesional Pagar Saturday, January 26, 2019
-Petroneo 45 Profesional Pagar Saturday, January 26, 2019
-Andrea 45 Profesional Pagar Saturday, January 26, 2019
-Mike 45 Profesional Pagar Saturday, January 26, 2019
